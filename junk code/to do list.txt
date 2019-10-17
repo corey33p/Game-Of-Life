@@ -1,0 +1,5 @@
+interactivity
+stored dictionary of still lifes, oscillators, methuselahs, etc
+ability to loop edges
+ability for cells to spread beyond visible board
+ability to detect oscillating states1f

@@ -1,0 +1,13 @@
+how to find if numpy array b of shape (y,z)) is in a of shape (x,y,z)
+IE, how to check history of board states (a) for a given board state (b)
+IE, how to detect oscillatory board states
+
+a=np.random.randint(0,2,(10,2,2))
+b=np.array([[1,1],[0,1]])
+c=(a==b).astype(np.int32)
+d=c.reshape(10,4)
+e=d.sum(axis=1)
+f=b.size
+g=f in e
+np.argwhere(e == f)
+for i in range(10): print(str(a[i,...])+"\n")

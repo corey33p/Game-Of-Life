@@ -1,0 +1,15 @@
+E:
+cd E:\Documents\School\PHSX 211\study app\source
+python
+import json
+with open('probabilities.json', 'r') as f:
+    a = json.load(f)
+
+b={}
+for key in a:
+    key_copy = str(key)
+    while key[0] == "0": key = key[1:]
+    b[int(key)] = a[key_copy]
+
+with open('probabilities.json', 'w') as f:
+    json.dump(b, f, sort_keys=True, indent=4)
